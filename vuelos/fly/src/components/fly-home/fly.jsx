@@ -5,6 +5,8 @@ import ReactSelect from "react-select";
 import MyModal from "../../shared/modals/modal";
 import BorderExample from "../../shared/loading/loading";
 
+import { avion, jet } from '../../assets/assets.js';
+
 const equipaje = [
   { label: "S", value: "S" },
   { label: "L", value: "L" },
@@ -94,7 +96,7 @@ function Fly() {
 
       <nav className="bg-white p-4 ">
         <div className="container w-2/3 mx-auto flex justify-between items-center">
-          <img src="src/assets/avion.png" alt="Logo" className="h-10" />
+          <img src={avion} alt="Logo" className="h-10" />
           <div className="text-xl font-semibold">ChinoLatam</div>
         </div>
       </nav>
@@ -107,7 +109,7 @@ function Fly() {
                   alt="Airplane"
                   className="w-full h-auto rounded-lg object-cover"
                   height="400"
-                  src="src\assets\jet.jpg"
+                  src={jet}
                   style={{
                     aspectRatio: "200/100",
                     objectFit: "cover",

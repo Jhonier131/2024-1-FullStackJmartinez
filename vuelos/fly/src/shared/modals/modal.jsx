@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
+import { avion } from '../../assets/assets.js';
 
 function MyModal(props) {
   console.log("props");
@@ -13,7 +14,7 @@ function MyModal(props) {
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center space-x-4">
                 <div className="bg-gray-100 dark:bg-gray-800 rounded-full p-2">
-                  <img className="h-6 w-6 text-gray-500 dark:text-gray-400" src="src\assets\avion.png" />
+                  <img className="h-6 w-6 text-gray-500 dark:text-gray-400" src={avion} />
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">Ticket Vuelo</h3>
