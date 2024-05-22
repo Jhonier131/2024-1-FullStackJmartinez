@@ -28,13 +28,13 @@ function Fly() {
   }, [datosModal]);
 
   const getReservas = async () => {
-    const response = await axios.get("http://localhost:4000/paises/getreservas");
+    const response = await axios.get("https://2024-1-full-stack-jmartinez.vercel.app/paises/getreservas");
     setReservas(response.data.payload);
   };
 
   const getPaises = async () => {
     try {
-      const response = await axios.get("http://localhost:4000/paises/getpaises");
+      const response = await axios.get("https://2024-1-full-stack-jmartinez.vercel.app/paises/getpaises");
       const dataPaises = response.data.payload.map((pais) => {
         return {
           label: pais.name,
@@ -56,7 +56,7 @@ function Fly() {
     BorderExample();
     if (origen && destino && maleta && fecha) {
       setLoading(true);
-      const createReserva = await axios.post("http://localhost:4000/paises/addreserva", { origen, destino, maleta, fecha });
+      const createReserva = await axios.post("https://2024-1-full-stack-jmartinez.vercel.app/paises/addreserva", { origen, destino, maleta, fecha });
       console.log("createReserva");
       console.log(createReserva);
       if (createReserva.data.status === 200) {
