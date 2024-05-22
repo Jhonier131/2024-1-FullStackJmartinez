@@ -1,11 +1,11 @@
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import './styles/AdminHome.css'
 import { useState } from "react";
+import axios from "axios";
+import Swal from 'sweetalert2'
 
 function AdminHome({user}){
-    if(user!=='admin' || !user){
-        return <Navigate to="/"/>
-    }
+    const [tipo, setTipo] = useState('')
     const home = useNavigate();
     const [textoEditar, setTextoEditar] = useState("");
     const [signoEditar, setSignoEditar] = useState("");
@@ -21,21 +21,45 @@ function AdminHome({user}){
         home("/");
     }
 
-    function handleClick(e){
-        // console.log(signoEditar);
-        // console.log(textoEditar);
+    async function handleClick(e){
+        console.log('DATOS EDITAR');
+        console.log(signoEditar, tipo);
+        console.log(textoEditar);
+
+        const dataSigno = {
+            signoEditar,
+            tipo,
+            textoEditar
+        }
         e.preventDefault();
-        fetch(`http://localhost:4000/v1/signos/${signoEditar}`, {
-            method: 'PATCH',
-            headers: {"Content-Type": "application/json"},
-            body: JSON.stringify({"textoEditar": textoEditar})
-        })
+        const editarSigno = await axios.post('http://localhost:4000/v1/signos/signoEditar', dataSigno)
+        console.log(editarSigno.data);
+        if(editarSigno.data.status === 200) {
+            Swal.fire({
+                text: 'Se ha editado el signo correctamente.',
+                icon: 'success',
+                confirmButtonText: 'Aceptar'
+              })
+        } else {
+            Swal.fire({
+                title: 'Error!',
+                text: 'Ha ocurrido un error al editar el signo.',
+                icon: 'error',
+                confirmButtonText: 'Aceptar'
+            })
+        }
     }
 
     return (
-        <div class="container">
+        <div className="container">
             <h2 id="textoAdmin">Edita un Signo Zodiacal</h2>
-            <select id="editSignos" onClick={handleSelect}>
+            <select className="select_tipo" onChange={(e) => setTipo(e.target.value)}>
+                <option value="0">Seleccione su tipo</option>
+                <option value="Hombre">Hombre</option>
+                <option value="Mujer">Mujer</option>
+                <option value="Nine">Niñe</option>
+            </select>
+            <select id="editSignos" onChange={handleSelect}>
                 <option value="0">Seleciona un signo zodiacal</option>
                 <option value="Aries">Aries</option>
                 <option value="Geminis">Géminis</option>
@@ -50,7 +74,6 @@ function AdminHome({user}){
                 <option value="Piscis">Piscis</option>
             </select>
             <textarea id="textoEditar" cols="50" rows="10" onChange={(e)=> setTextoEditar(e.target.value)}>
-
             </textarea>
             <button id="btnEditar" onClick={handleClick}>Editar</button>
             <button id="btnHomeAdmin" onClick={goHome}>Home</button>

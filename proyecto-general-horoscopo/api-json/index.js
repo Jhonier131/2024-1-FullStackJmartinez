@@ -3,6 +3,10 @@ const {urlencoded, json} = require('express');
 const router = require('./routes/signos.routes.js');
 const cors = require('cors');
 
+// const corsOptions = {
+//     allowedOrigins: 'http://127.0.0.1:5173/'
+// }
+
 const app = express();
 
 app.use(urlencoded({extended: true}))

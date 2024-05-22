@@ -1,6 +1,10 @@
 #textoSigno{
     border-radius: 10px;
+    border: none;
+    padding: 1rem;
     display: flex;
-    background-color: rgb(95, 82, 82);
-    color: white;
+    background: linear-gradient(145deg, #fefefe, #d5d5d5);
+    box-shadow:  5px 5px 10px #c9c9c9,
+                -5px -5px 10px #ffffff;
+    color: black;
 }

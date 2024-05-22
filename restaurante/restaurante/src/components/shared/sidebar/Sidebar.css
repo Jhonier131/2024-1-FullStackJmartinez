@@ -1,0 +1,96 @@
+.sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  text-align: start;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: width 0.3s ease;
+  background: white;
+}
+
+.sidebar a {
+  height: 30px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.toggle-btn {
+  position: fixed;
+  left: 200px;
+  top: 0px;
+  height: 70px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: left 0.3s ease;
+  background: white;
+}
+
+.collapsed {
+  width: 60px;
+  overflow: hidden;
+}
+
+.collapsed .toggle-btn {
+  left: 60px;
+  transition: left 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.sidebar a.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.icon-sidebar {
+  padding: 0.3rem;
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+
+.sidebar a:hover .icon-sidebar {
+  filter: invert(1);
+}
+.sidebar a.active .icon-sidebar {
+  filter: invert(1);
+}
+
+.cerrar-sesion {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  margin-bottom: 1rem;
+}
+
+.sidebar a:nth-child(7):hover {
+  background-color: transparent;
+  color: black;
+
+  && .icon-sidebar {
+    animation: rotate-leave 1s ease-in-out;
+    filter: invert(0);
+  }
+}
+
+@keyframes rotate-leave {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+}

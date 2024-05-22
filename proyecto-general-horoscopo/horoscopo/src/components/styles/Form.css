@@ -4,8 +4,13 @@ body{
 }
 
 .entry{
+    border: none;
     border-radius: 10px;
-    padding: 10px 20px 10px 35px;
+    height: 2rem;
+    padding-left: 1rem;
+    background: #ededed;
+    box-shadow: inset 5px 5px 10px #c9c9c9,
+                inset -5px -5px 10px #ffffff;
 }
 
 form{
@@ -15,14 +20,24 @@ form{
 
 #btnEnviar{
     margin-top: 20px;
-    background-color: rgb(48, 27, 238);
     padding: 5px;
+    border: none;
     padding-left: 35px;
     padding-right: 35px;
     border-radius: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
+    color: black;
+    background: #ededed;
+    box-shadow: inset 5px 5px 10px #c9c9c9,
+                inset -5px -5px 10px #ffffff;
 }
+
+#btnEnviar:hover {
+    border-radius: 20px;
+    background: #ededed;
+    box-shadow:  5px 5px 10px #c9c9c9,
+                -5px -5px 10px #ffffff;
+} 
 
 .txt{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -31,5 +46,27 @@ form{
 #txtBienvenida{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: oblique;
-    color: white;
+    color: black;
+    margin-bottom: 3rem;
+}
+
+.card_shadow {
+    padding: 1rem;
+    margin: 0 auto;
+    width: 500px;
+    border-radius: 20px;
+    background: #ededed;
+    box-shadow:  5px 5px 10px #c9c9c9,
+                -5px -5px 10px #ffffff;
+}
+
+.credenciales {
+    position: absolute;
+    top: 0;
+}
+
+.usuarios {
+    display: flex;
+    margin-top: -1rem;
+    gap: 1rem 2rem;
 }

@@ -1,0 +1,283 @@
+{
+  "sales": [
+    {
+      "id": 1,
+      "usuario": "mesero1",
+      "total": 7000,
+      "mesa": "3",
+      "estado": "V",
+      "items": [
+        {
+          "plato": {
+            "id": 4,
+            "name": "Beff",
+            "price": "1200",
+            "description": "carne"
+          },
+          "cantidad": 1
+        },
+        {
+          "plato": {
+            "id": 5,
+            "name": "pan italiano",
+            "price": "2000",
+            "description": "Pan traido de italia"
+          },
+          "cantidad": 1
+        },
+        {
+          "plato": {
+            "id": 7,
+            "name": "Don Ziren",
+            "price": "1200",
+            "description": "Queso cuajada de hace 5 anos"
+          },
+          "cantidad": 2
+        },
+        {
+          "plato": {
+            "id": 6,
+            "name": "quijano especial del dia",
+            "price": "100",
+            "description": "Carne fresca del mercado"
+          },
+          "cantidad": 2
+        },
+        {
+          "plato": {
+            "id": 2,
+            "name": "chiken",
+            "price": "1200",
+            "description": "carne"
+          },
+          "cantidad": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "usuario": "mesero1",
+      "total": 2700,
+      "mesa": "3",
+      "estado": "V",
+      "items": [
+        {
+          "plato": {
+            "id": 4,
+            "name": "Beff",
+            "price": "1200",
+            "description": "carne"
+          },
+          "cantidad": 1
+        },
+        {
+          "plato": {
+            "id": 2,
+            "name": "chiken",
+            "price": "1200",
+            "description": "carne"
+          },
+          "cantidad": 1
+        },
+        {
+          "plato": {
+            "id": 6,
+            "name": "quijano especial del dia",
+            "price": "100",
+            "description": "Carne fresca del mercado"
+          },
+          "cantidad": 3
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "usuario": "mesero1",
+      "total": 4500,
+      "mesa": "3",
+      "estado": "V",
+      "items": [
+        {
+          "plato": {
+            "id": 6,
+            "name": "quijano especial del dia",
+            "price": "100",
+            "description": "Carne fresca del mercado"
+          },
+          "cantidad": 1
+        },
+        {
+          "plato": {
+            "id": 5,
+            "name": "pan italiano",
+            "price": "2000",
+            "description": "Pan traido de italia"
+          },
+          "cantidad": 1
+        },
+        {
+          "plato": {
+            "id": 2,
+            "name": "chiken",
+            "price": "1200",
+            "description": "carne"
+          },
+          "cantidad": 1
+        },
+        {
+          "plato": {
+            "id": 4,
+            "name": "Beff",
+            "price": "1200",
+            "description": "carne"
+          },
+          "cantidad": 1
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "usuario": "mesero1",
+      "total": 175000,
+      "mesa": "1",
+      "estado": "V",
+      "items": [
+        {
+          "plato": {
+            "id": 2,
+            "name": "Chuleta de pollo",
+            "price": "15000",
+            "description": "filete de pollo apanado"
+          },
+          "cantidad": 4
+        },
+        {
+          "plato": {
+            "id": 1,
+            "name": "Pollo a la naranja",
+            "price": "20000",
+            "description": "Pollo campecino con naranja espcial"
+          },
+          "cantidad": 2
+        },
+        {
+          "plato": {
+            "id": 3,
+            "name": "Baby beff   ",
+            "price": "25000",
+            "description": "Carne de res premium"
+          },
+          "cantidad": 3
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "usuario": "mesero1",
+      "total": 190000,
+      "mesa": "1",
+      "estado": "V",
+      "items": [
+        {
+          "plato": {
+            "id": 2,
+            "name": "Chuleta de pollo",
+            "price": "15000",
+            "description": "filete de pollo apanado"
+          },
+          "cantidad": 5
+        },
+        {
+          "plato": {
+            "id": 1,
+            "name": "Pollo a la naranja",
+            "price": "20000",
+            "description": "Pollo campecino con naranja espcial"
+          },
+          "cantidad": 2
+        },
+        {
+          "plato": {
+            "id": 3,
+            "name": "Baby beff   ",
+            "price": "25000",
+            "description": "Carne de res premium"
+          },
+          "cantidad": 3
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "usuario": "mesero1",
+      "total": 60000,
+      "mesa": "1",
+      "estado": "V",
+      "items": [
+        {
+          "plato": {
+            "id": 1,
+            "name": "Pollo a la naranja",
+            "price": "20000",
+            "description": "Pollo campecino con naranja espcial"
+          },
+          "cantidad": 1
+        },
+        {
+          "plato": {
+            "id": 2,
+            "name": "Chuleta de pollo",
+            "price": "15000",
+            "description": "filete de pollo apanado"
+          },
+          "cantidad": 1
+        },
+        {
+          "plato": {
+            "id": 3,
+            "name": "Baby beff   ",
+            "price": "25000",
+            "description": "Carne de res premium"
+          },
+          "cantidad": 1
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "usuario": "mesero1",
+      "total": 60000,
+      "mesa": "2",
+      "estado": "V",
+      "items": [
+        {
+          "plato": {
+            "id": 1,
+            "name": "Pollo a la naranja",
+            "price": "20000",
+            "description": "Pollo campecino con naranja espcial"
+          },
+          "cantidad": 1
+        },
+        {
+          "plato": {
+            "id": 2,
+            "name": "Chuleta de pollo",
+            "price": "15000",
+            "description": "filete de pollo apanado"
+          },
+          "cantidad": 1
+        },
+        {
+          "plato": {
+            "id": 3,
+            "name": "Baby beff   ",
+            "price": "25000",
+            "description": "Carne de res premium"
+          },
+          "cantidad": 1
+        }
+      ]
+    }
+  ]
+}

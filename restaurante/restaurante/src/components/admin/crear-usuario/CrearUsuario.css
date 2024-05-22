@@ -1,0 +1,93 @@
+.contenedor-newUsers {
+  display: flex;flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+  width: 70%;
+  position: relative;
+}
+
+.user-module {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  border-radius: 20px;
+  background: #007bff;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,123,255,1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,123,255,1);
+  box-shadow: 0px 0px 10px 0px rgba(0,123,255,1);
+}
+
+.user-module  h2 {
+  text-align: center;
+  color: white;
+}
+
+.crearUsuario {
+  margin-bottom: 15px;
+}
+
+.crearUsuario label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.crearUsuario select,
+.crearUsuario input[type="text"],
+.crearUsuario input[type="password"] {
+  width: 100%;
+  height: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-crearUsuario {
+  width: 100%;
+  height: 2.5rem;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-crearUsuario:hover {
+  background-color: #0056b3;
+  color: white;
+  border: 2px solid white;
+}
+
+
+/* COM Tabla */
+.user-table {
+  width: 80%;
+  border-collapse: collapse;
+  /* margin-bottom: 5rem; */
+  border-radius: 10px;
+  /* background: #007bff; */
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,123,255,1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,123,255,1);
+  box-shadow: 0px 0px 10px 0px rgba(0,123,255,1);
+}
+
+.user-table th, .user-table td {
+  padding: 8px;
+}
+
+.user-table th {
+  color: black;
+  text-align: start;
+}
+
+/* .user-row:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.user-row:hover {
+  background-color: #ddd;
+} */

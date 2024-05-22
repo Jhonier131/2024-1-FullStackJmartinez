@@ -1,0 +1,41 @@
+.sales-container {
+  display: flex;flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+  width: auto;
+  min-width: 50%;
+  max-width: 70%;
+  position: relative;
+  border-radius: 20px;
+  background: #007bff;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,123,255,1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,123,255,1);
+  box-shadow: 0px 0px 10px 0px rgba(0,123,255,1);
+  }
+  
+  .sales-title {
+    font-size: 24px;
+    margin: 10px 0;
+    color: white;
+  }
+  
+  .sales-table {
+    width: auto;
+    min-width: 70%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+  }
+  
+  .sales-table th, .sales-table td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  
+  .total-sales {
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
