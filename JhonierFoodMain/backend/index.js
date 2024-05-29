@@ -17,7 +17,7 @@ const app = express()
 const port = 5000
 // app.use(cors())
 app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "https://2024-1-full-stack-jmartinez-9acw.vercel.app");
+  res.setHeader("Access-Control-Allow-Origin", "https://2024-1-full-stack-jmartinez-9acw-ak8yadans.vercel.app");
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
