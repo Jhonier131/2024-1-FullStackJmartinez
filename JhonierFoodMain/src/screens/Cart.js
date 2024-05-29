@@ -13,7 +13,7 @@ export default function Cart() {
   }
   const handleCheckOut = async () => {
     let userEmail = localStorage.getItem("userEmail");
-    let response = await fetch("http://localhost:5000/api/auth/orderData", {
+    let response = await fetch("https://2024-1-full-stack-jmartinez-5vxr.vercel.app/api/auth/orderData", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

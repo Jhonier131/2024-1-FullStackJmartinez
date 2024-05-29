@@ -21,7 +21,7 @@ export default function Signup() {
     // console.log(latlong)
     let [lat, long] = latlong
     console.log(lat, long)
-    const response = await fetch("http://localhost:5000/api/auth/getlocation", {
+    const response = await fetch("https://2024-1-full-stack-jmartinez-5vxr.vercel.app/api/auth/getlocation", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -38,7 +38,7 @@ export default function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(JSON.stringify({ name: credentials.name, email: credentials.email, password: credentials.password, location: credentials.geolocation }));
-    const response = await fetch("http://localhost:5000/api/auth/createuser", {
+    const response = await fetch("https://2024-1-full-stack-jmartinez-5vxr.vercel.app/api/auth/createuser", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
