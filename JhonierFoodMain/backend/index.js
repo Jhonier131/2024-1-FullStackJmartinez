@@ -6,7 +6,7 @@ global.foodData = require('./db')(function call(err, data, CatData) {
   global.foodCategory = CatData;
   console.log('global<<' ,global);
 })
-const cors = require('cors');
+// const cors = require('cors');
 // const db = require('./db');
 // db.dbInit().then(res => {
 //   console.log('Conexion realizada');
@@ -15,7 +15,7 @@ const cors = require('cors');
 const express = require('express')
 const app = express()
 const port = 5000
-app.use(cors())
+// app.use(cors())
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
   res.header(
